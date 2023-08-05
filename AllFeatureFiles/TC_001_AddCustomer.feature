@@ -16,3 +16,11 @@ Feature: Test Guru99 Application
     Then enter monthly rental and pre local mins and free international mins and free local free min charges and international min charges and sms per charges
     And click on submit button
     And click on home button
+
+  #Add terrifplan to customer code written by pooja
+  Scenario: Test Add terrifPlan to customer Functionality
+    When click on Add Tarif plan to customer Link
+    Then user enter CustomerId
+    And click on submit Button
+    And Select terif plan and click terif plan to customer
+    And click on Home Button
