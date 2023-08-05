@@ -43,6 +43,12 @@ public class UtilsClass extends BaseClass {
 			}
 
 		}
+		
+	}
+	
+	public static String captureTotalamount(WebElement wb) {
+	
+		return wb.getText();
 	}
 
 }

@@ -24,3 +24,10 @@ Feature: Test Guru99 Application
     And click on submit Button
     And Select terif plan and click terif plan to customer
     And click on Home Button
+
+    #Add pay billing code written by Chetna
+    Scenario: Test pay billing functionality
+    When user click on pay billing link 
+    Then user enter on customer id 
+    And user click on submit Button
+    And capture the total amount of billing
