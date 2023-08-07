@@ -11,9 +11,12 @@ public class UtilsClass extends BaseClass {
 
 	public static void click(WebElement wb) {
 
-		if (wb.isDisplayed() && wb.isEnabled()) {
+		if (wb.isDisplayed()) {
+			if (wb.isEnabled()) {
+				wb.click();
 
-			wb.click();
+			}
+
 		}
 	}
 
@@ -40,6 +43,8 @@ public class UtilsClass extends BaseClass {
 
 			if (a.equalsIgnoreCase(b)) {
 				((JavascriptExecutor) driver).executeScript("arguments[0].click();", abc);
+				break;
+
 			}
 
 		}
